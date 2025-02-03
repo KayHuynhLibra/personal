@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project {
+            flex: 1;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <img src="./images/profile.jpg" alt="Profile Photo" class="profile-img">
+            <h1>Kim Sang Huynh</h1>
+            <!-- Inline CSS -->
+            <p style="font-family: 'Courier New', Courier, monospace; color: brown;">Web Developer</p>
+            <p>Hello! I am a passionate web developer with experience in front-end and back-end technologies. I enjoy building user-friendly web applications and working on creative projects.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-wrapper">
+
+                <div class="project">
+                    <img src="./images/project1.jpg" alt="Project 1"class="project-img">
+                    <h3>Project 1</h3>
+                    <p>This project showcases a simple portfolio website using HTML and CSS. 
+                        It includes a navigation bar, an about section, a projects section, and a contact form.</p>
+                </div>
+
+                <div class="project">
+                    <img src="./images/project2.jpg" alt="Project 2" class="project-img">
+                    <h3>Project 2</h3>
+                    <p>This project focuses on integrating AWS S3 for cloud storage. 
+                        It allows users to upload, retrieve, and manage files efficiently using AWS SDK. 
+                        The application ensures secure data handling with proper authentication and access controls.</p>
+                </div>    
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: step1994@iastate.edu</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/example" target="_blank">linkedin.com/in/example</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Kim Sang Huynh. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
